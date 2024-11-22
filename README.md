@@ -1,4 +1,4 @@
-# Step-by-Step Guide to Creating and Publishing an npm Package with TypeScript
+# How to Build and Publish an npm Package with TypeScript
 
 In this article, I'll show you how to easily prepare an npm package.
 
@@ -139,7 +139,7 @@ Go to the GitHub repository, then **Settings** -> **Secrets and Variables** -> *
 - **Key**: `NPM_AUTH_TOKEN`
 - **Value**: Generate Access Token in **npmjs.com** -> go to your profile on npmjs.com and click on “**Generate new token**” -> **Classic Token** -> Copy this token and put it as the secret value.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1732298616662/0bc01ed4-6917-4e79-80e5-1d2a86fa1df5.png align="center")
+![npm](https://cdn.hashnode.com/res/hashnode/image/upload/v1732298616662/0bc01ed4-6917-4e79-80e5-1d2a86fa1df5.png)
 
 Create the following file in GitHub: `/.github/workflows/publish.yml`:
 

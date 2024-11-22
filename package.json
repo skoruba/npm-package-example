@@ -17,5 +17,8 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

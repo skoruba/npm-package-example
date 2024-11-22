@@ -1,0 +1,21 @@
+{
+  "name": "@skoruba/npm-package-example",
+  "version": "0.0.1",
+  "description": "Skoruba npm package",
+  "author": "Jan Skoruba",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.9.1",
+    "typescript": "^5.6.3"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  }
+}

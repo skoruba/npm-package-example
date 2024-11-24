@@ -1,6 +1,6 @@
 {
   "name": "@skoruba/npm-package-example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Skoruba npm package",
   "author": "Jan Skoruba",
   "license": "MIT",
@@ -10,9 +10,17 @@
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",

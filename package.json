@@ -1,6 +1,6 @@
 {
   "name": "@skoruba/npm-package-example",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Skoruba npm package",
   "author": "Jan Skoruba",
   "license": "MIT",
@@ -16,9 +16,9 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js",
-      "types": "./dist/types/index.d.ts"
+      "require": "./dist/cjs/index.js"
     }
   },
   "scripts": {
